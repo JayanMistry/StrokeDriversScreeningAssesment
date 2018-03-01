@@ -1,0 +1,59 @@
+/* You can add global styles to this file, and also import other style files */
+
+* {
+    margin: 10;
+    padding: 10;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    background: #ddd;
+    font-family: 'Roboto', sans-serif;    
+ }
+
+
+ canvas {
+    height: 100%;
+    width: 100%;
+    display: block;
+  }
+  
+  
+
+
+
+/* Go go animations */ 
+@keyframes enter-intro {
+    0% {
+        transform: translate(-100px, 0px);
+        opacity: 0
+    }
+    42% {
+        transform: translate(-80px, 0px);
+        opacity: 0.8
+    }
+    60% {
+        transform: translate(3px, 0px) scale(0.96, 1.04);
+        opacity: 1
+    }
+    65% {
+        transform: translate(2px, 0px);
+        opacity: 1
+    }
+    80% {
+        transform: translate(-2px, 0px);
+        opacity: 1
+    }
+    90% {
+        transform: translate(1px, 0px);
+        opacity: 1
+    }
+    100% {
+        transform: translate(0px, 0px);
+        opacity: 1
+    }
+}

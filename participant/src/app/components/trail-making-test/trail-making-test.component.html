@@ -1,0 +1,21 @@
+<div id="instructionsdiv">
+    <div class="test-title" width="1024" height="1320">
+        {{title}}
+      </div>
+    <div class="test-instructions" width="1024" height="1320">
+      {{testInstructions}}
+    </div>
+    <button (click)="clickHandlerInstructions()" type="button" id="beginbutton" class="next-test-btn" >Begin Test</button>
+  </div>
+  
+  <div id="test1div" style="display: none">
+    <canvas id="test1" width="1024" height="1320" style="border:1px solid #000000;"></canvas>
+    <button (click)="clickHandlerTest1()" type="button" id="test1donebutton" class="next-test-btn">Proceed to Test 2</button>
+  </div>
+  
+  <div id="test2div" style="display: none;">
+    <canvas id="test2" width="1024" height="1320" style="border:1px solid #000000;"></canvas>
+    <a routerLink="/home">
+      <button (click)="sendResults()" type="button" id="test2donebutton" class="next-test-btn">Send Results</button>
+    </a>
+  </div>
